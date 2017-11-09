@@ -1,0 +1,155 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/08/2014, 21:41:10
+    Author     : Marcel
+*/
+
+.txt-center{
+    text-align: center;
+}
+.txt-left{
+    text-align: left;
+}
+
+.txt-right{
+    text-align: center;
+}
+
+.float-rigth{
+    float: right;
+}
+
+.menu-text{
+    color: whitesmoke;
+}
+
+.float-end{
+    float: end;
+}
+
+
+.float-left{
+    float: left;
+}
+
+.btn-rigth{
+    float: right;
+}
+
+.btn-left{
+    float: left;
+}
+
+.navbar-space{
+    position: relative;
+    top: 5em;
+}
+
+.table-extra-bordered{
+    border: #b2b2b2 thin solid;
+    
+}
+
+.table-extra-header-bordered{
+    border: #b2b2b2 thin solid;
+    
+}
+
+.table-hover:hover{
+    background-color: #cccccc;
+}
+
+.brand{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 300;
+    font-family: comic-sans; 
+}
+
+.logo{
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+.breadcrumb-extra{
+    margin-top: -2em;
+}
+
+.margin-left{
+    margin-left: 2em;
+}
+.margin-right{
+    margin-right: 2em;
+}
+
+.alert-text{
+    color: red;
+}
+
+body{
+    
+    /*background-image: url('../images/fundo.png') ;*/
+    background-repeat: round;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: 300px;
+    
+        
+}
+
+.pagination-link{
+    padding: 2px;
+}
+    
+.item{
+    float: left;
+    background-color:  #e6fefe;
+    text-shadow: 4px; 
+    text-align: center;
+    color: #006666;
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.item:hover{
+    background-color:  #7fe4e4;
+    text-decoration: none;
+}
+.item {    
+    font-size: 22px;;
+}
+
+.item a:hover{    
+    text-decoration: none;
+}
+.count{
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    vertical-align: auto;
+    padding: 8px;
+     color: #006666;
+}
+
+.table-with-filter{
+    width: 900px;
+}
+
+.filterContainer{
+    width: 200px;
+    height: 200px;
+}
+.filter{
+    display: none;
+    margin-left: 10px;
+    border: #e6fefe medium solid;
+    
+}

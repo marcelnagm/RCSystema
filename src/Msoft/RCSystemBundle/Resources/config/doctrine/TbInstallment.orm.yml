@@ -1,0 +1,99 @@
+Msoft\RCSystemBundle\Entity\TbInstallment:
+    type: entity
+    table: tb_installment
+    indexes:
+        id_payment:
+            columns:
+                - id_payment
+                - id_client
+        id_client:
+            columns:
+                - id_client
+        IDX_22C8D4D0B3B52D7D:
+            columns:
+                - id_payment
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        value:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+        valuePaid:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: value_paid
+        dueDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: 'due_date'
+        type:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+        dateIn:
+            type: datetime
+            nullable: true
+            comment: ''
+            column: date_in
+        userIn:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: user_in
+        dateUpdated:
+            type: datetime
+            nullable: true
+            comment: ''
+            column: date_updated
+        userUpdated:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: user_updated
+        removed:
+            type: datetime
+            nullable: true
+            comment: ''
+        userRemoved:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: user_removed
+    manyToOne:
+        idPayment:
+            targetEntity: TbPayment
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_payment:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idClient:
+            targetEntity: TbClient
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_client:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

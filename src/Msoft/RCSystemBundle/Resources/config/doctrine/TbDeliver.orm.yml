@@ -1,0 +1,42 @@
+Msoft\RCSystemBundle\Entity\TbDeliver:
+    type: entity
+    table: tb_deliver
+    uniqueConstraints:
+        document_number:
+            columns:
+                - document_number
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        description:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+        documentNumber:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: document_number
+        contact:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+        location:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

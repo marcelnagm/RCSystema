@@ -1,0 +1,30 @@
+tb_method_payment:
+    path:     /method-payment
+    defaults: { _controller: "MsoftRCSystemBundle:TbMethodPayment:index" }
+
+tb_method_payment_show:
+    path:     /{id}/show
+    defaults: { _controller: "MsoftRCSystemBundle:TbMethodPayment:show" }
+
+tb_method_payment_new:
+    path:    /method-payment/new
+    defaults: { _controller: "MsoftRCSystemBundle:TbMethodPayment:new" }
+
+tb_method_payment_create:
+    path:    /method-payment/create
+    defaults: { _controller: "MsoftRCSystemBundle:TbMethodPayment:create" }
+    requirements: { _method: post }
+
+tb_method_payment_edit:
+    path:    /method-payment/{id}/edit
+    defaults: { _controller: "MsoftRCSystemBundle:TbMethodPayment:edit" }
+
+tb_method_payment_update:
+    path:    /method-payment/{id}/update
+    defaults: { _controller: "MsoftRCSystemBundle:TbMethodPayment:update" }
+    requirements: { _method: post|put }
+
+tb_method_payment_delete:
+    path:    /method-payment/{id}/delete
+    defaults: { _controller: "MsoftRCSystemBundle:TbMethodPayment:delete" }
+    requirements: { _method: get }

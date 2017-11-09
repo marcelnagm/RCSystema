@@ -1,0 +1,35 @@
+tb_subcategory:
+    path:     /subcategory
+    defaults: { _controller: "MsoftRCSystemBundle:TbSubcategory:index" }
+
+tb_subcategory_show:
+    path:     /subcategory/id-category/{id}
+    defaults: { _controller: "MsoftRCSystemBundle:TbSubcategory:list" }
+    requirements: { _method: get }
+    
+tb_subcategory_show:
+    path:     /subcategory/{id}/show
+    defaults: { _controller: "MsoftRCSystemBundle:TbSubcategory:show" }
+
+tb_subcategory_new:
+    path:     /subcategory/new
+    defaults: { _controller: "MsoftRCSystemBundle:TbSubcategory:new" }
+
+tb_subcategory_create:
+    path:     /subcategory/create
+    defaults: { _controller: "MsoftRCSystemBundle:TbSubcategory:create" }
+    requirements: { _method: post }
+
+tb_subcategory_edit:
+    path:     /subcategory/{id}/edit
+    defaults: { _controller: "MsoftRCSystemBundle:TbSubcategory:edit" }
+
+tb_subcategory_update:
+    path:     /subcategory/{id}/update
+    defaults: { _controller: "MsoftRCSystemBundle:TbSubcategory:update" }
+    requirements: { _method: post|put }
+
+tb_subcategory_delete:
+    path:     /subcategory/{id}/delete
+    defaults: { _controller: "MsoftRCSystemBundle:TbSubcategory:delete" }
+    requirements: { _method: post|delete|get }

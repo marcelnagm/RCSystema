@@ -1,0 +1,34 @@
+tb_entry:
+    path:     /entry
+    defaults: { _controller: "MsoftRCSystemBundle:TbEntry:index" }
+
+tb_entry_show:
+    path:     /entry/{id}/show
+    defaults: { _controller: "MsoftRCSystemBundle:TbEntry:show" }
+
+tb_entry_new:
+    path:     /entry/new
+    defaults: { _controller: "MsoftRCSystemBundle:TbEntry:new" }
+
+tb_entry_create:
+    path:     /entry/create
+    defaults: { _controller: "MsoftRCSystemBundle:TbEntry:create" }
+    requirements: { _method: post }
+
+tb_entry_edit:
+    path:     /entry/{id}/edit
+    defaults: { _controller: "MsoftRCSystemBundle:TbEntry:edit" }
+
+tb_entry_update:
+    path:     /entry/{id}/update
+    defaults: { _controller: "MsoftRCSystemBundle:TbEntry:update" }
+    requirements: { _method: post|put }
+
+tb_entry_delete:
+    path:     /entry/{id}/delete
+    defaults: { _controller: "MsoftRCSystemBundle:TbEntry:delete" }
+    requirements: { _method: post|delete|get }
+
+tb_entry_add_stock:
+    path:     /entry/{id}/add
+    defaults: { _controller: "MsoftRCSystemBundle:TbStock:indexOne" }    

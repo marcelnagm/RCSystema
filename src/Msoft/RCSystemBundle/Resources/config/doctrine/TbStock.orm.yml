@@ -1,0 +1,91 @@
+Msoft\RCSystemBundle\Entity\TbStock:
+    type: entity
+    table: tb_stock
+    indexes:
+        id_product:
+            columns:
+                - id_product
+        id_entry:
+            columns:
+                - id_entry
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        quantity:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+        priceCost:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: price_cost
+        priceSell:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: price_sell
+        dateIn:
+            type: datetime
+            nullable: true
+            comment: ''
+            column: date_in
+        userIn:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: user_in
+        dateUpdated:
+            type: datetime
+            nullable: true
+            comment: ''
+            column: date_updated
+        userUpdated:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: user_updated
+        removed:
+            type: datetime
+            nullable: true
+            comment: ''
+        userRemoved:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: user_removed
+    manyToOne:
+        idProduct:
+            targetEntity: TbProduct
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_product:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idEntry:
+            targetEntity: TbEntry
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_entry:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

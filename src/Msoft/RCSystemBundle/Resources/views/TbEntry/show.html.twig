@@ -1,0 +1,65 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+    <h1>TbEntry</h1>
+     <ul class="record_actions">
+    <li>
+        <a href="{{ path('tb_entry') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('tb_entry_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+</ul>
+     <table class=" table-bordered  table-condensed">
+       <tr class="table-hover table-extra-bordered">
+            <tr class="table-hover table-extra-bordered">
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr class="table-hover table-extra-bordered">
+                <th>Description</th>
+                <td>{{ entity.description }}</td>
+            </tr>
+            <tr class="table-hover table-extra-bordered">
+                <th>Datein</th>
+                <td>{{ entity.dateIn|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr class="table-hover table-extra-bordered">
+                <th>Userin</th>
+                <td>{{ entity.userIn }}</td>
+            </tr>           
+            </tr>
+        </tbody>
+    </table>
+
+   
+          <h4>Lista de Produtos em entrada</h4>
+    <table class="table-condensed table-bordered">
+        <thead>
+            <tr>
+                 <th class="table-extra-bordered">Id</th>
+                 <th class="table-extra-bordered">Quantity</th>
+                 <th class="table-extra-bordered">Product</th>
+                 <th class="table-extra-bordered">Price Sell</th>
+                 <th class="table-extra-bordered">Price Cost</th>                 
+            </tr>
+        </thead>
+          <tbody class="table-extra-bordered">
+        {% for entityStock in stockEntities %}
+            <tr class="table-hover table-extra-bordered">
+                <td>{{ entityStock.id }}</td>
+                <td>{{ entityStock.quantity }}</td>
+                <td>{{ entityStock.getIdProduct }}</td>
+                <td>{{ entityStock.priceCost }}</td>
+                <td>{{ entityStock.priceSell}}</td>                
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+        
+        
+{% endblock %}

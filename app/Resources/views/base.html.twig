@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}RCSystem{% endblock %}</title>
+
+        {% block stylesheets %}
+
+            <link rel="stylesheet" href="{{asset('bundles/msoftrcsystem/css/bootstrap.min.css')}}">
+            <link rel="stylesheet" href="{{asset('bundles/msoftrcsystem/css/bootstrap-theme.css')}}">
+            <link rel="stylesheet" href="{{asset('bundles/msoftrcsystem/css/style.css')}}">
+            <link rel="stylesheet" href="{{asset('bundles/msoftrcsystem/js/jselect/css/select2.css')}}">
+            <link rel="stylesheet" href="{{asset('bundles/msoftrcsystem/css/jquery-ui.css')}}">
+        {% endblock %}
+        {% block javascripts %}                        
+            <script type="text/javascript" src="{{asset('bundles/msoftrcsystem/js/jquery.min.js')}}"></script>            
+            <script type="text/javascript" src="{{asset('bundles/msoftrcsystem/js/bootstrap.js')}}"></script>
+            <script type="text/javascript" src="{{asset('bundles/msoftrcsystem/js/jselect/js/select2.min.js')}}"></script>
+            <script type="text/javascript" src="{{asset('bundles/msoftrcsystem/js/jquery-ui.js')}}"></script>
+            <script type="text/javascript" src="{{asset('bundles/msoftrcsystem/js/jselect/js/tbproduct_idSubcategory.js')}}"></script>
+            <script>
+                $(document).ready(function() {
+                $("select").select2(minimumInputLength: 2 }
+                );
+                });
+            </script>
+        {% endblock %}
+
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />       
+    </head>
+    <body>       
+
+        <div class="navbar  navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner row">
+                <div class="brand col-md-2 float-left"><img class="logo" src="{{asset('bundles/msoftrcsystem/images/logo.jpg')}}"/> &nbspRCSystem   </div>
+                <div class="btn btn-navbar col-md-8 float-left" >
+                    <div class="menu-text float-left">
+                        Menu &rarrb;
+                    </div>
+                    <div class="dropdown margin-right float-left">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" >                            
+                            Entrada/Saida de Produtos
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">                                                        
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_entry') }}">Entrada de Produtos</a></li>                            
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_deliver') }}">Fornecedores</a></li>                            
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('pdv') }}">PDV</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown float-left">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" >                            
+                            Estoque
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_product') }}">Produtos</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_category') }}">Categoria de Produtos</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_subcategory') }}">SubCategoria de Produtos</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown float-left margin-left">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" >                            
+                            Financeiro
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_client') }}">Clientes</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_method_payment') }}">Metodos de Pagamento</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_shop') }}">Compras </a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_payment') }}">Pagamentos </a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown float-left margin-left">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" >                            
+                            Usuarios
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_client') }}">Clientes</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ path('tb_method_payment') }}">Metodos de Pagamento</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2">
+                    {% if app.session.get('user') is not null %}
+                        <div class="text-info">                    
+                            {{ app.session.get('user')   }}
+                            <a class="btn btn-danger " href="logout" >Sair</a>                                                     
+                        </div>
+                    {% endif %}                                
+                </div>
+
+            </div>
+
+        </div>        
+
+        <div class="container navbar-space">          
+            {% if form is defined  %}
+                {% form_theme form '::fields.html.twig' %}
+            {% endif %}        
+            {% if app.session.get('error') is not empty %}
+                <div class='alert alert-error alert-danger'>
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    {{app.session.get('error')}}    
+                    {{app.session.set('error','')}}
+
+                </div>
+            {% endif %}     
+            {% if app.session.get('message') is not empty %}
+
+                <div class='alert alert-dismissable alert-success' >                     
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    {{app.session.get('message')}}    
+                    {{app.session.set('message','')}}   
+
+                </div>
+            {% endif %}     
+
+            {% block content %}
+            {% endblock %}
+            {% if pagination is defined %}
+
+                <div class="navigation float-left">
+                    {{ knp_pagination_render(pagination) }}
+                     <div class="count">
+                    | {{ pagination.getTotalItemCount }} Registros
+                    </div>
+                </div>
+               
+            {% endif%}
+        </div>
+        {#      <div class="navbar  navbar-fixed-bottom navbar-inverse ">
+                  <div class="txt-center text-info">
+                      ALK Copyrights &copy;
+                  </div>
+              </div>#}
+
+    </body>
+</html>

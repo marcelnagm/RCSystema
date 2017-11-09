@@ -1,0 +1,84 @@
+{% extends '::base.html.twig' %}
+
+{% block content -%}
+    <h1>TbShop</h1>
+
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Id Client</th>
+                <td>{{ entity.idClient}}</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td>{{ entity.total }}</td>
+            </tr>
+            <tr>
+                <th>Pending</th>
+                <td>{{ entity.pending }}</td>
+            </tr>
+            <tr>
+                <th>Datein</th>
+                <td>{{ entity.dateIn|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Userin</th>
+                <td>{{ entity.userIn }}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+            
+            <h3>Pagamentos Feitos        </h3>    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Valor</th>
+                <th>Metodo de Pagamento</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in payments %}
+            <tr class="table-hover"> 
+                <td>{{ entity.id }}</td>
+                <td>{{ entity.value }}</td>
+                <td>{{ entity.idMethod }}</td>                
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+            <h3>Produtos Comprados</h3>    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Quantidade</th>
+                <th>Produto</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in products %}
+            <tr class="table-hover"> 
+                <td>{{ entity.id }}</td>
+                <td>{{ entity.quantity }}</td>
+                <td>{{ entity.idProduct }}</td>                
+                <td>{{ entity.subtotal }}</td>                
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('tb_shop') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

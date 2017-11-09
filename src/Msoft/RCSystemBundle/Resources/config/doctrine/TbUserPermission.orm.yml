@@ -1,0 +1,40 @@
+Msoft\RCSystemBundle\Entity\TbUserPermission:
+    type: entity
+    table: tb_user_permission
+    indexes:
+        id_user:
+            columns:
+                - id_user
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        module:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+        permission:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+    manyToOne:
+        idUser:
+            targetEntity: TbUser
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,30 @@
+ens_job:
+    path:     /
+    defaults: { _controller: "EnsJobeetBundle:Job:index" }
+
+ens_job_show:
+    path:     /{id}/show
+    defaults: { _controller: "EnsJobeetBundle:Job:show" }
+
+ens_job_new:
+    path:     /new
+    defaults: { _controller: "EnsJobeetBundle:Job:new" }
+
+ens_job_create:
+    path:     /create
+    defaults: { _controller: "EnsJobeetBundle:Job:create" }
+    requirements: { _method: post }
+
+ens_job_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "EnsJobeetBundle:Job:edit" }
+
+ens_job_update:
+    path:     /{id}/update
+    defaults: { _controller: "EnsJobeetBundle:Job:update" }
+    requirements: { _method: post|put }
+
+ens_job_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "EnsJobeetBundle:Job:delete" }
+    requirements: { _method: post|delete }

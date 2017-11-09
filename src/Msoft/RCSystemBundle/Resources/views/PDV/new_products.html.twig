@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+    
+    <h1>PDV2</h1>
+{{ form_start(form) }}
+ {{ form_row(form.idClient ) }}
+ <a href="{{path('tb_client_new')}}">New Client</a>
+ {{ form_row(form.submit, { 'attr': {'class': 'btn btn-default'}}) }}
+{{ form_end(form) }}
+    
+    
+    
+{% endblock %}

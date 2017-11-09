@@ -1,0 +1,46 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+    <h2>Subcategoria de Produtos</h2>
+
+    <table class="table table-bordered  table-extra-bordered">
+        <thead >
+            <tr >
+                <th class="table-extra-bordered">Description</th>
+                <th class="table-extra-bordered">Id</th>
+                <th class="table-extra-bordered">Category</th>                
+                <th class="table-extra-bordered">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="table-extra-bordered">
+        {% for entity in pagination %}
+            <tr class="table-hover table-extra-bordered">
+                <td><a href="{{ path('tb_subcategory_show', { 'id': entity.id }) }}">{{ entity.description }}</a></td>
+                <td>{{ entity.id }}</td>
+                <td>{{ entity.getIdCategory }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('tb_subcategory_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('tb_categorty_delete', { 'id': entity.id }) }}">delete</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('tb_subcategory_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('tb_subcategory_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

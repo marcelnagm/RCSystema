@@ -1,0 +1,21 @@
+Msoft\RCSystemBundle\Entity\TbUser:
+    type: entity
+    table: tb_user
+    uniqueConstraints:
+        UNIQ_D6E3D45892FC23A8:
+            columns:
+                - username_canonical
+        UNIQ_D6E3D458A0D96FBF:
+            columns:
+                - email_canonical
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+    lifecycleCallbacks: {  }

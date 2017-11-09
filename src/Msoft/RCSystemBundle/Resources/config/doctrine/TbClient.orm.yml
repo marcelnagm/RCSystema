@@ -1,0 +1,75 @@
+Msoft\RCSystemBundle\Entity\TbClient:
+    type: entity
+    table: tb_client
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        documentId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: document_id
+        name:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+        cellphone:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+        address:
+            type: string
+            nullable: false
+            length: 60
+            fixed: false
+            comment: ''
+        email:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        dateIn:
+            type: datetime
+            nullable: true
+            comment: ''
+            column: date_in
+        userIn:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: user_in
+        dateUpdated:
+            type: datetime
+            nullable: true
+            comment: ''
+            column: date_updated
+        userUpdated:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: user_updated
+        removed:
+            type: datetime
+            nullable: true
+            comment: ''
+        userRemoved:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: user_removed
+    lifecycleCallbacks: {  }

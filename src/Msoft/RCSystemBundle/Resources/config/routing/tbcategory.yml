@@ -1,0 +1,60 @@
+tb_category:
+    path:     /category
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:index" }
+
+tb_category_show:
+    path:     /category/{id}/show
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:show" }
+
+tb_category_new:
+    path:     /tbcategory/new
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:new" }
+
+tb_category_create:
+    path:     /category/create
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:create" }
+    requirements: { _method: post }
+
+tb_category_edit:
+    path:     /category/{id}/edit
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:edit" }
+
+tb_category_update:
+    path:     /category/{id}/update
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:update" }
+    requirements: { _method: post|put }
+
+tb_category_delete:
+    path:     /category/{id}/delete
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:delete" }
+    requirements: { _method: post|delete|get }
+tb_categorty:
+    path:     /category
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:index" }
+
+tb_categorty_show:
+    path:     /category/{id}/show
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:show" }
+
+tb_categorty_new:
+    path:     /tbcategory/new
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:new" }
+
+tb_categorty_create:
+    path:     /category/create
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:create" }
+    requirements: { _method: post }
+
+tb_categorty_edit:
+    path:     /category/{id}/edit
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:edit" }
+
+tb_categorty_update:
+    path:     /category/{id}/update
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:update" }
+    requirements: { _method: post|put }
+
+tb_categorty_delete:
+    path:     /category/{id}/delete
+    defaults: { _controller: "MsoftRCSystemBundle:TbCategory:delete" }
+    requirements: { _method: post|delete|get }

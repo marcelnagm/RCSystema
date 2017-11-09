@@ -1,0 +1,6 @@
+## YAML Template.
+---
+Msoft\RCSystemBundle\Entity\TbEntry:
+    properties:
+        idDeliver:
+            - NotBlank: ~

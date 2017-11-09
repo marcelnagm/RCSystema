@@ -1,0 +1,42 @@
+{% extends '::print.html.twig' %}
+
+
+
+{% block content %}
+    <h1>{{actionTitle}}</h1>
+
+     <table class="table table-bordered  table-extra-bordered">
+        <thead>
+            <tr>
+                <th class="table-extra-bordered">Id</th>
+                <th class="table-extra-bordered">Barcode</Fth>
+                <th class="table-extra-bordered">Info</th>
+                <th class="table-extra-bordered">Quantity</th>
+                <th class="table-extra-bordered">Category \ SubCategory</th>
+                <th class="table-extra-bordered">Price Cost \ Price Sell</th>
+                <th class="table-extra-bordered">Profit \ %</th>
+                <th class="table-extra-bordered">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entity in entities %}
+                  <tr class="table-hover table-extra-bordered">
+                    <td>{{ entity.id }}</td>
+                    <td><a href="{{ path('tb_product_show', { 'id': entity.id }) }}">{{ entity.barcode }}</a></td>
+                    <td>{{ entity.info }}</td>                    
+                    <td>{{ entity.quantity }}</td>
+                    <td>{{ entity.getIdCategory }} \ {{ entity.getIdSubCategory}}</td>
+                    <td>R${{ entity.pricecost }} \ R${{ entity.pricesell}}</td>
+                    <td>R${{ entity.getProfit }} \  {{ entity.getProfitPercentage }}%</td>
+                    <td>                        
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+        
+            {# total items count #}
+
+            
+{% endblock %}

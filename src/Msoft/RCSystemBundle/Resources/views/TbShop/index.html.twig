@@ -1,0 +1,38 @@
+{% extends '::base.html.twig' %}
+
+{% block content -%}
+    <h1>TbShop list</h1>
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Datein</th>
+                <th>Id Client</th>
+                <th>Total</th>
+                <th>Pending</th>                
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in pagination %}
+            <tr class="table-hover"> 
+                <td><a href="{{ path('tb_shop_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{% if entity.dateIn %}{{ entity.dateIn|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.idClient }}</td>
+                <td>R${{ entity.total }}</td>
+                <td>R${{ entity.pending }}</td>                                
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('tb_shop_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+<a class="btn btn-default" href="{{ path('tb_shop_client')}}">Buscar Compras por cliente</a>
+
+    {% endblock %}

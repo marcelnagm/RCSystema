@@ -1,0 +1,28 @@
+pdv:
+    path:     /pdv
+    defaults: { _controller: "MsoftRCSystemBundle:PDV:index" }
+    
+pdv_select_client:
+    path:     /pdv/new
+    defaults: { _controller: "MsoftRCSystemBundle:PDV:selectClient" }
+    
+pdv_select_pay:
+    path:     /pdv/pay
+    defaults: { _controller: "MsoftRCSystemBundle:PDV:selectPayment" }
+
+pdv_pay_create:
+    path:     /pdv/pay/create
+    defaults: { _controller: "MsoftRCSystemBundle:PDV:createPayment" }
+    
+pdv_pay_delete:
+    path:     /pdv/pay/{id}/delete
+    defaults: { _controller: "MsoftRCSystemBundle:PDV:deletePayment" }
+
+pdv_summary:
+    path:     /pdv/summary
+    defaults: { _controller: "MsoftRCSystemBundle:PDV:review" }
+
+pdv_confirm:
+    path:     /pdv/confirm
+    defaults: { _controller: "MsoftRCSystemBundle:PDV:confirm" }
+

@@ -1,0 +1,17 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+    
+    <h1>Choose the payment method</h1>
+    <h5>Total : R${{total}}</h5>
+    <h5>Total remain: R${{totalRemain}}</h5>
+{{ form_start(form) }}
+ {{ form_row(form.idMethod   ) }}
+ {{ form_row(form.installments   ) }}
+ {{ form_row(form.value ) }}
+ <br>
+ {{ form_row(form.submit, { 'attr': {'class': 'btn btn-default'}}) }}
+{{ form_end(form) }}
+    
+    
+{% endblock %}

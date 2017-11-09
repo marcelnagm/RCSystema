@@ -1,0 +1,51 @@
+Msoft\RCSystemBundle\Entity\TbPromotion:
+    type: entity
+    table: tb_promotion
+    indexes:
+        id_product:
+            columns:
+                - id_product
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        description:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+        dtStart:
+            type: date
+            nullable: false
+            comment: ''
+            column: dt_start
+        dtEnd:
+            type: date
+            nullable: false
+            comment: ''
+            column: dt_end
+        pricePromotion:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: price_promotion
+    manyToOne:
+        idProduct:
+            targetEntity: TbProduct
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_product:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

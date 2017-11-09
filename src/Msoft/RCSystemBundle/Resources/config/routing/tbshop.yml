@@ -1,0 +1,14 @@
+tb_shop:
+    path:     /shop
+    defaults: { _controller: "MsoftRCSystemBundle:TbShop:index" }
+
+tb_shop_show:
+    path:     /shop/{id}/show
+    defaults: { _controller: "MsoftRCSystemBundle:TbShop:show" }
+    
+tb_shop_client:
+    path:     /shop/client
+    defaults: { _controller: "MsoftRCSystemBundle:TbShop:indexClient" }
+
+
+
