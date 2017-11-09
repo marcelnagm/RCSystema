@@ -1,0 +1,1 @@
+[01-Apr-2014 22:10:00 Europe/Berlin] PHP Notice:  Undefined variable: div in C:\xampp\htdocs\wdd\model\PhotoComments.php on line 76

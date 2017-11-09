@@ -1,0 +1,36 @@
+<!-- config/xml/User.dcm.xml -->
+        <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                            http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+             <entity name="Order" table="orders">
+                 <id name="id" type="integer">
+                     <generator strategy="AUTO" />
+                 </id>
+                 <field name="id_order" type="integer" />
+                 <field name="id_user" type="integer" />
+                 <field name="id_seller" type="integer" />
+                 <field name="date" type="string" />                                  
+                 <field name="expected_date" type="string" />                                  
+                 <field name="client" type="string" />                                  
+                 <field name="lens" type="string" />                                  
+                 <field name="frame" type="string" />                                  
+                 <field name="date_store_out" type="string" />                                  
+                 <field name="date_laboratory_in" type="string" />                                  
+                 <field name="order_out" type="integer" />                                  
+                 <field name="date_order_out" type="string" />                                  
+                 <field name="date_expected_lens" type="string" />                                  
+                 <field name="lens_made" type="string" />                                  
+                 <field name="date_laboratory_out" type="string" />                                  
+                 <field name="date_mount_in" type="string" />                                  
+                 <field name="done" type="integer" />                                  
+                 <field name="obs" type="string" />                                  
+                 <field name="date_mount_out" type="string" />                                  
+                 <field name="date_distribuition_in" type="string" />                                  
+                 <field name="date_distribuition_out" type="string" />                                  
+                 <field name="priority" type="integer" />                                  
+                 <field name="delivered" type="string" />                                  
+             </entity>
+        </doctrine-mapping>
+	

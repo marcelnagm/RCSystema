@@ -1,0 +1,14 @@
+<!-- config/xml/User.dcm.xml -->
+        <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                            http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+             <entity name="Seller" table="seller">
+                 <id name="id" type="integer">
+                     <generator strategy="AUTO" />
+                 </id>
+                 <field name="id_user" type="integer" />
+                 <field name="name" type="string" />                                  
+             </entity>
+        </doctrine-mapping>

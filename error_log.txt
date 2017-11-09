@@ -1,0 +1,516 @@
+[28-Apr-2014 17:43:57 Europe/Berlin] PHP Notice:  Undefined variable: params in C:\xampp\htdocs\RcSystem\html\sellers.php on line 31
+[28-Apr-2014 17:43:57 Europe/Berlin] PHP Warning:  class_parents(): Class Sellers does not exist and could not be loaded in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\RuntimeReflectionService.php on line 40
+[28-Apr-2014 17:43:57 Europe/Berlin] PHP Warning:  array_reverse() expects parameter 1 to be array, boolean given in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory.php on line 257
+[28-Apr-2014 17:43:57 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory.php on line 257
+[28-Apr-2014 17:43:57 Europe/Berlin] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class Sellers does not exist' in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\RuntimeReflectionService.php:73
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\RuntimeReflectionService.php(73): ReflectionClass->__construct('Sellers')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Mapping\ClassMetadataInfo.php(867): Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getClass('Sellers')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Mapping\ClassMetadataFactory.php(511): Doctrine\ORM\Mapping\ClassMetadataInfo->initializeReflection(Object(Doctrine\Common\Persistence\Mapping\RuntimeReflectionService))
+#3 C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory.php(300): Doctrine\ORM\Mapping\ClassMetadataFactory->initializeReflection(Object(Doctrine\ORM\Mapping\ClassMetadata), Object(Doctrine\Common\Persistence\Mapping\RuntimeReflectionService))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\Comm in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\RuntimeReflectionService.php on line 73
+[28-Apr-2014 17:44:42 Europe/Berlin] PHP Warning:  class_parents(): Class Sellers does not exist and could not be loaded in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\RuntimeReflectionService.php on line 40
+[28-Apr-2014 17:44:42 Europe/Berlin] PHP Warning:  array_reverse() expects parameter 1 to be array, boolean given in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory.php on line 257
+[28-Apr-2014 17:44:42 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory.php on line 257
+[28-Apr-2014 17:44:42 Europe/Berlin] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class Sellers does not exist' in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\RuntimeReflectionService.php:73
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\RuntimeReflectionService.php(73): ReflectionClass->__construct('Sellers')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Mapping\ClassMetadataInfo.php(867): Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getClass('Sellers')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Mapping\ClassMetadataFactory.php(511): Doctrine\ORM\Mapping\ClassMetadataInfo->initializeReflection(Object(Doctrine\Common\Persistence\Mapping\RuntimeReflectionService))
+#3 C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory.php(300): Doctrine\ORM\Mapping\ClassMetadataFactory->initializeReflection(Object(Doctrine\ORM\Mapping\ClassMetadata), Object(Doctrine\Common\Persistence\Mapping\RuntimeReflectionService))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\Comm in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\RuntimeReflectionService.php on line 73
+[28-Apr-2014 17:45:06 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\Common\Persistence\Mapping\MappingException' with message 'Invalid mapping file 'Seller.dcm.xml' for class 'Seller'.' in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\MappingException.php:84
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\Driver\FileDriver.php(114): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Seller', 'Seller.dcm.xml')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Mapping\Driver\XmlDriver.php(57): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Seller')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Mapping\ClassMetadataFactory.php(112): Doctrine\ORM\Mapping\Driver\XmlDriver->loadMetadataForClass('Seller', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory.php(302): Doctrine\ORM\Mapping\ClassMetadataFactory->doLoadMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL, false, Array)
+#4 C:\xampp\h in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\MappingException.php on line 84
+[28-Apr-2014 17:45:57 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\Common\Persistence\Mapping\MappingException' with message 'Invalid mapping file 'Seller.dcm.xml' for class 'Seller'.' in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\MappingException.php:84
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\Driver\FileDriver.php(114): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Seller', 'Seller.dcm.xml')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Mapping\Driver\XmlDriver.php(57): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Seller')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Mapping\ClassMetadataFactory.php(112): Doctrine\ORM\Mapping\Driver\XmlDriver->loadMetadataForClass('Seller', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory.php(302): Doctrine\ORM\Mapping\ClassMetadataFactory->doLoadMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL, false, Array)
+#4 C:\xampp\h in C:\xampp\htdocs\RcSystem\Doctrine\Common\Persistence\Mapping\MappingException.php on line 84
+[28-Apr-2014 17:51:32 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\xampp\htdocs\RcSystem\sellers_ajax.php:2) in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 16
+[28-Apr-2014 17:51:32 Europe/Berlin] PHP Notice:  Undefined index: name in C:\xampp\htdocs\RcSystem\sellers_ajax.php on line 55
+[28-Apr-2014 17:51:32 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_user' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\SellersModel.php(37): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\sellers_ajax.php(56): SellersModel::add(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doct in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[28-Apr-2014 17:51:55 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\xampp\htdocs\RcSystem\sellers_ajax.php:2) in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 16
+[28-Apr-2014 17:51:55 Europe/Berlin] PHP Notice:  Undefined index: name in C:\xampp\htdocs\RcSystem\sellers_ajax.php on line 55
+[28-Apr-2014 17:51:55 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_user' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\SellersModel.php(37): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\sellers_ajax.php(56): SellersModel::add(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doct in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[28-Apr-2014 17:52:01 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\xampp\htdocs\RcSystem\sellers_ajax.php:2) in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 16
+[28-Apr-2014 17:52:01 Europe/Berlin] PHP Notice:  Undefined index: name in C:\xampp\htdocs\RcSystem\sellers_ajax.php on line 55
+[28-Apr-2014 17:52:01 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_user' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\SellersModel.php(37): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\sellers_ajax.php(56): SellersModel::add(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doct in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[28-Apr-2014 17:52:31 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\xampp\htdocs\RcSystem\sellers_ajax.php:2) in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 16
+[28-Apr-2014 17:52:31 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\SellersModel.php(37): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\sellers_ajax.php(56): SellersModel::add(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doctrin in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[28-Apr-2014 17:53:15 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\xampp\htdocs\RcSystem\sellers_ajax.php:2) in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 16
+[28-Apr-2014 17:57:45 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\xampp\htdocs\RcSystem\sellers_ajax.php:2) in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 16
+[28-Apr-2014 17:57:45 Europe/Berlin] PHP Notice:  Undefined index: id_seller in C:\xampp\htdocs\RcSystem\sellers_ajax.php on line 63
+[28-Apr-2014 20:14:10 Europe/Berlin] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at C:\xampp\htdocs\RcSystem\sellers_ajax.php:2) in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 16
+[28-Apr-2014 20:25:15 Europe/Berlin] PHP Notice:  Undefined variable: session in C:\xampp\htdocs\RcSystem\sellers_ajax.php on line 9
+[28-Apr-2014 20:25:15 Europe/Berlin] PHP Fatal error:  Call to a member function getSession() on a non-object in C:\xampp\htdocs\RcSystem\sellers_ajax.php on line 9
+[28-Apr-2014 20:44:30 Europe/Berlin] PHP Notice:  Undefined index: id_seller in C:\xampp\htdocs\RcSystem\sellers_ajax.php on line 64
+[28-Apr-2014 20:44:30 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\ORMException' with message 'The identifier id is missing for a query of Seller' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMException.php:160
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(380): Doctrine\ORM\ORMException::missingIdentifierField('Seller', 'id')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityRepository.php(131): Doctrine\ORM\EntityManager->find('Seller', NULL, 0, NULL)
+#2 C:\xampp\htdocs\RcSystem\model\SellersModel.php(54): Doctrine\ORM\EntityRepository->find(NULL)
+#3 C:\xampp\htdocs\RcSystem\sellers_ajax.php(65): SellersModel::edit(Object(Doctrine\ORM\EntityManager), Array)
+#4 {main}
+  thrown in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMException.php on line 160
+[28-Apr-2014 20:45:23 Europe/Berlin] PHP Notice:  Undefined index: id_seller in C:\xampp\htdocs\RcSystem\sellers_ajax.php on line 64
+[28-Apr-2014 20:45:23 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\ORMException' with message 'The identifier id is missing for a query of Seller' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMException.php:160
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(380): Doctrine\ORM\ORMException::missingIdentifierField('Seller', 'id')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityRepository.php(131): Doctrine\ORM\EntityManager->find('Seller', NULL, 0, NULL)
+#2 C:\xampp\htdocs\RcSystem\model\SellersModel.php(54): Doctrine\ORM\EntityRepository->find(NULL)
+#3 C:\xampp\htdocs\RcSystem\sellers_ajax.php(65): SellersModel::edit(Object(Doctrine\ORM\EntityManager), Array)
+#4 {main}
+  thrown in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMException.php on line 160
+[28-Apr-2014 20:45:29 Europe/Berlin] PHP Notice:  Undefined index: id_seller in C:\xampp\htdocs\RcSystem\sellers_ajax.php on line 64
+[28-Apr-2014 20:45:29 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\ORMException' with message 'The identifier id is missing for a query of Seller' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMException.php:160
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(380): Doctrine\ORM\ORMException::missingIdentifierField('Seller', 'id')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityRepository.php(131): Doctrine\ORM\EntityManager->find('Seller', NULL, 0, NULL)
+#2 C:\xampp\htdocs\RcSystem\model\SellersModel.php(54): Doctrine\ORM\EntityRepository->find(NULL)
+#3 C:\xampp\htdocs\RcSystem\sellers_ajax.php(65): SellersModel::edit(Object(Doctrine\ORM\EntityManager), Array)
+#4 {main}
+  thrown in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMException.php on line 160
+[28-Apr-2014 20:46:41 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\SellersModel.php(64): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\sellers_ajax.php(65): SellersModel::edit(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doctri in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[28-Apr-2014 20:46:52 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\SellersModel.php(64): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\sellers_ajax.php(65): SellersModel::edit(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doctri in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[28-Apr-2014 20:47:38 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\SellersModel.php(64): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\sellers_ajax.php(63): SellersModel::edit(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doctri in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[28-Apr-2014 20:52:56 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_user' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\SellersModel.php(63): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\sellers_ajax.php(63): SellersModel::edit(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doc in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[28-Apr-2014 20:56:53 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_user' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\SellersModel.php(61): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\sellers_ajax.php(63): SellersModel::edit(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doc in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[28-Apr-2014 21:48:31 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\RcSystem\sellers_ajax.php:95) in C:\xampp\htdocs\RcSystem\sellers_ajax.php on line 100
+[28-Apr-2014 22:03:36 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\ORMInvalidArgumentException' with message 'EntityManager#remove() expects parameter 1 to be an entity object, NULL given.' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMInvalidArgumentException.php:101
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(579): Doctrine\ORM\ORMInvalidArgumentException::invalidObject('EntityManager#r...', NULL)
+#1 C:\xampp\htdocs\RcSystem\model\SellersModel.php(72): Doctrine\ORM\EntityManager->remove(NULL)
+#2 C:\xampp\htdocs\RcSystem\sellers_ajax.php(62): SellersModel::remove(Object(Doctrine\ORM\EntityManager), Array)
+#3 {main}
+  thrown in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMInvalidArgumentException.php on line 101
+[28-Apr-2014 22:04:00 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\ORMInvalidArgumentException' with message 'EntityManager#remove() expects parameter 1 to be an entity object, NULL given.' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMInvalidArgumentException.php:101
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(579): Doctrine\ORM\ORMInvalidArgumentException::invalidObject('EntityManager#r...', NULL)
+#1 C:\xampp\htdocs\RcSystem\model\SellersModel.php(72): Doctrine\ORM\EntityManager->remove(NULL)
+#2 C:\xampp\htdocs\RcSystem\sellers_ajax.php(62): SellersModel::remove(Object(Doctrine\ORM\EntityManager), Array)
+#3 {main}
+  thrown in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMInvalidArgumentException.php on line 101
+[28-Apr-2014 22:04:18 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\ORMInvalidArgumentException' with message 'EntityManager#remove() expects parameter 1 to be an entity object, NULL given.' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMInvalidArgumentException.php:101
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(579): Doctrine\ORM\ORMInvalidArgumentException::invalidObject('EntityManager#r...', NULL)
+#1 C:\xampp\htdocs\RcSystem\model\SellersModel.php(72): Doctrine\ORM\EntityManager->remove(NULL)
+#2 C:\xampp\htdocs\RcSystem\sellers_ajax.php(62): SellersModel::remove(Object(Doctrine\ORM\EntityManager), Array)
+#3 {main}
+  thrown in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMInvalidArgumentException.php on line 101
+[28-Apr-2014 22:28:34 Europe/Berlin] PHP Notice:  Undefined index: user in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 25
+[28-Apr-2014 22:28:34 Europe/Berlin] PHP Notice:  Undefined index: user in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 25
+[28-Apr-2014 22:28:34 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\RcSystem\classes\Session.class.php:25) in C:\xampp\htdocs\RcSystem\sellers.php on line 16
+[28-Apr-2014 22:29:38 Europe/Berlin] PHP Notice:  Undefined index: user in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 25
+[28-Apr-2014 22:29:38 Europe/Berlin] PHP Notice:  Undefined index: user in C:\xampp\htdocs\RcSystem\classes\Session.class.php on line 25
+[28-Apr-2014 22:29:38 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\RcSystem\classes\Session.class.php:25) in C:\xampp\htdocs\RcSystem\sellers.php on line 16
+[29-Apr-2014 15:42:47 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 't0.id_order' in 'field list'' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Connection.php:641
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Connection.php(641): PDOStatement->execute()
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(844): Doctrine\DBAL\Connection->executeQuery('SELECT t0.id_or...', Array, Array)
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityRepository.php(157): Doctrine\ORM\Persisters\BasicEntityPersister->loadAll(Array, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(17): Doctrine\ORM\EntityRepository->findBy(Array)
+#4 C:\xampp\htdocs\RcSystem\html\orders.php(43): OrdersModel::getAll(Object(Doctrine\ORM\EntityManager), Array)
+#5 C:\xampp\htdocs\RcSystem\orders.php(14): include('C:\xampp\htdocs...')
+#6 {main}
+
+Next exception 'Doctrine\DBAL\DBALException' with message 'An exception occurred while executing 'SELECT t0.id_order AS id_orde in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[29-Apr-2014 15:44:09 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 't0.id_order' in 'field list'' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Connection.php:641
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Connection.php(641): PDOStatement->execute()
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(844): Doctrine\DBAL\Connection->executeQuery('SELECT t0.id_or...', Array, Array)
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityRepository.php(157): Doctrine\ORM\Persisters\BasicEntityPersister->loadAll(Array, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(17): Doctrine\ORM\EntityRepository->findBy(Array)
+#4 C:\xampp\htdocs\RcSystem\html\orders.php(43): OrdersModel::getAll(Object(Doctrine\ORM\EntityManager), Array)
+#5 C:\xampp\htdocs\RcSystem\orders.php(14): include('C:\xampp\htdocs...')
+#6 {main}
+
+Next exception 'Doctrine\DBAL\DBALException' with message 'An exception occurred while executing 'SELECT t0.id_order AS id_orde in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[29-Apr-2014 15:48:36 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 't0.id_order' in 'field list'' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Connection.php:641
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Connection.php(641): PDOStatement->execute()
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(844): Doctrine\DBAL\Connection->executeQuery('SELECT t0.id_or...', Array, Array)
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityRepository.php(157): Doctrine\ORM\Persisters\BasicEntityPersister->loadAll(Array, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(17): Doctrine\ORM\EntityRepository->findBy(Array)
+#4 C:\xampp\htdocs\RcSystem\html\orders.php(43): OrdersModel::getAll(Object(Doctrine\ORM\EntityManager), Array)
+#5 C:\xampp\htdocs\RcSystem\orders.php(14): include('C:\xampp\htdocs...')
+#6 {main}
+
+Next exception 'Doctrine\DBAL\DBALException' with message 'An exception occurred while executing 'SELECT t0.id_order AS id_orde in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[29-Apr-2014 15:49:18 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\DBAL\DBALException' with message 'Unknown column type "integet" requested. Any Doctrine type that you use has to be registered with \Doctrine\DBAL\Types\Type::addType(). You can get a list of all the known types with \Doctrine\DBAL\Types\Type::getTypeMap(). If this error occurs during database introspection then you might have forgot to register all database types for a Doctrine Type. Use AbstractPlatform#registerDoctrineTypeMapping() or have your custom types implement Type#getMappedDatabaseTypes(). If the type name is empty you might have a problem with the cache or forgot some mapping information.' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php:92
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Types\Type.php(148): Doctrine\DBAL\DBALException::unknownColumnType('integet')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Internal\Hydration\SimpleObjectHydrator.php(120): Doctrine\DBAL\Types\Type::getType('integet')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Internal\Hyd in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 92
+[29-Apr-2014 17:53:48 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'date' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(41): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\orders_ajax.php(24): OrdersModel::add(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doctrine\D in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[29-Apr-2014 17:55:23 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'expected_date' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(41): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\orders_ajax.php(24): OrdersModel::add(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'D in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[29-Apr-2014 17:56:57 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'expected_date' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(41): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\orders_ajax.php(24): OrdersModel::add(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'D in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[29-Apr-2014 17:58:25 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'expected_date' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(41): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\orders_ajax.php(24): OrdersModel::add(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'D in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[29-Apr-2014 19:57:57 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'expected_date' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(41): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\orders_ajax.php(24): OrdersModel::add(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'D in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[29-Apr-2014 21:17:29 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'select * from orders u where u.date_store_out != '00-00-0000 00:00' and u.delivered = '00-00-0000 00:00' and id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('select * from o...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(1960): Doctrine\ORM\Query\Parser->syntaxError('IdentificationV...', Array)
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(1040): Doctrine\ORM\Query\Parser->SelectExpression()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(757): Doctrine\ORM\Query\Parser->SelectClause()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(726): Doctrine\ORM\Query\Parser->SelectStatement()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(229): Doctrine\ORM\Query\Parser->QueryLanguage()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.p in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:17:51 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'select u from Order u where u.date_store_out != '00-00-0000 00:00' and u.delivered = '00-00-0000 00:00' and id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(429): Doctrine\ORM\Query\QueryException::dqlError('select u from O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(528): Doctrine\ORM\Query\Parser->semanticalError(''id_user' is no...', Array)
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(233): Doctrine\ORM\Query\Parser->_processDeferredIdentificationVariables()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(304): Doctrine\ORM\Query\Parser->getAST()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query.php(233): Doctrine\ORM\Query\Parser->parse()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query.php(245): Doctrine\ORM\Query->_parse()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\AbstractQuery.php(737): Doctrine\O in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 49
+[29-Apr-2014 21:18:55 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'select u from Order u where u.date_store_out != "00-00-0000 00:00" and u.delivered = "00-00-0000 00:00" and id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('select u from O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2414): Doctrine in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:19:31 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'select u from Order u where u.date_store_out <> "00-00-0000 00:00" and u.delivered = "00-00-0000 00:00" and id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('select u from O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2414): Doctrine in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:20:46 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'select u from Order u where id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(429): Doctrine\ORM\Query\QueryException::dqlError('select u from O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(528): Doctrine\ORM\Query\Parser->semanticalError(''id_user' is no...', Array)
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(233): Doctrine\ORM\Query\Parser->_processDeferredIdentificationVariables()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(304): Doctrine\ORM\Query\Parser->getAST()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query.php(233): Doctrine\ORM\Query\Parser->parse()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query.php(245): Doctrine\ORM\Query->_parse()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\AbstractQuery.php(737): Doctrine\ORM\Query->_doExecute()
+#7 C:\xampp\htdocs\RcSystem\Doctrine\ORM\AbstractQuery.ph in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 49
+[29-Apr-2014 21:22:08 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'select u from Order u where u.date_store_out <> "00-00-0000 00:00" and u.delivered = "00-00-0000 00:00" and u.id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('select u from O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2414): Doctri in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:24:38 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where data_store_out = 00-00-0000 00:00 u.id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(744): Doctrine\ORM\Query\Parser->syntaxError('end of string')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(229): Doctrine\ORM\Query\Parser->QueryLanguage()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(304): Doctrine\ORM\Query\Parser->getAST()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query.php(233): Doctrine\ORM\Query\Parser->parse()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query.php(245): Doctrine\ORM\Query->_parse()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\AbstractQuery.php(737): Doctrine\ORM\Query->_doExecute()
+#7 C:\xampp\htdocs\RcSystem\Doctrine\ORM\AbstractQuery.php(538) in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:24:49 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where data_store_out = '00-00-0000 00:00' u.id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(744): Doctrine\ORM\Query\Parser->syntaxError('end of string')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(229): Doctrine\ORM\Query\Parser->QueryLanguage()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(304): Doctrine\ORM\Query\Parser->getAST()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query.php(233): Doctrine\ORM\Query\Parser->parse()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query.php(245): Doctrine\ORM\Query->_parse()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\AbstractQuery.php(737): Doctrine\ORM\Query->_doExecute()
+#7 C:\xampp\htdocs\RcSystem\Doctrine\ORM\AbstractQuery.php(53 in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:24:57 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where data_store_out == '00-00-0000 00:00' u.id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2414): Doctrine\ORM\Query\Parser->SimpleArithmeticExpres in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:25:06 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where u.data_store_out == '00-00-0000 00:00' u.id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2414): Doctrine\ORM\Query\Parser->SimpleArithmeticExpr in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:25:21 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where u.data_store_out == "00-00-0000 00:00" u.id_user = 2' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2414): Doctrine\ORM\Query\Parser->SimpleArithmeticExpr in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:27:55 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where u.id_user = 2 AND id_order = 2232' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(429): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(528): Doctrine\ORM\Query\Parser->semanticalError(''id_order' is n...', Array)
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(233): Doctrine\ORM\Query\Parser->_processDeferredIdentificationVariables()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(304): Doctrine\ORM\Query\Parser->getAST()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query.php(233): Doctrine\ORM\Query\Parser->parse()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query.php(245): Doctrine\ORM\Query->_parse()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\AbstractQuery.php(737): Doctrine\ORM\Query->_doExecute()
+#7 C:\xampp\htdocs\RcSystem\Doctrin in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 49
+[29-Apr-2014 21:29:52 Europe/Berlin] PHP Notice:  Undefined index: user in C:\xampp\htdocs\RcSystem\model\OrdersModel.php on line 25
+[29-Apr-2014 21:29:52 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where u.id_user =  AND u.date_store_out <> '00-00-0000 00:00'' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2414): Doctrine\ORM\Query\Parser->SimpleArithmeticE in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:33:13 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where u.id_user = 2 AND u.date_store_out <> '00-00-0000 00:00' AND AND u.delivered = '00-00-0000 00:00' ' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2414): D in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:33:27 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where u.id_user = 2 AND u.date_store_out <> '00-00-0000 00:00' AND AND u.delivered <> '00-00-0000 00:00' ' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2414):  in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 21:33:37 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where u.id_user = 2 AND u.date_store_out <> '00-00-0000 00:00' AND AND u.date_store_out <> '00-00-0000 00:00' ' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(24 in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 23:07:47 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where u.id_user = 2 AND u.date_distribuition_out == '00-00-0000 00:00' AND u.date_store_out == '00-00-0000 00:00' AND u.delivered = '00-00-0000 00:00'  ' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[29-Apr-2014 23:08:03 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\Query\QueryException' with message 'SELECT u FROM Order u where u.id_user = 2 AND u.date_distribuition_out == '00-00-0000 00:00' AND u.date_store_out = '00-00-0000 00:00' AND u.delivered = '00-00-0000 00:00'  ' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php:39
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(396): Doctrine\ORM\Query\QueryException::dqlError('SELECT u FROM O...')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2363): Doctrine\ORM\Query\Parser->syntaxError('Literal')
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2550): Doctrine\ORM\Query\Parser->Literal()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2485): Doctrine\ORM\Query\Parser->ArithmeticPrimary()
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2453): Doctrine\ORM\Query\Parser->ArithmeticFactor()
+#5 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\Parser.php(2427): Doctrine\ORM\Query\Parser->ArithmeticTerm()
+#6 C:\xampp\htdocs\ in C:\xampp\htdocs\RcSystem\Doctrine\ORM\Query\QueryException.php on line 44
+[30-Apr-2014 14:30:25 Europe/Berlin] PHP Notice:  Undefined index: date_order_out in C:\xampp\htdocs\RcSystem\model\OrdersModel.php on line 32
+[30-Apr-2014 15:56:22 Europe/Berlin] PHP Notice:  Undefined index: id in C:\xampp\htdocs\RcSystem\model\OrdersModel.php on line 13
+[30-Apr-2014 15:56:22 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Doctrine\ORM\ORMException' with message 'The identifier id is missing for a query of Order' in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMException.php:160
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(380): Doctrine\ORM\ORMException::missingIdentifierField('Order', 'id')
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityRepository.php(131): Doctrine\ORM\EntityManager->find('Order', NULL, 0, NULL)
+#2 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(13): Doctrine\ORM\EntityRepository->find(NULL)
+#3 C:\xampp\htdocs\RcSystem\html\order_detail.php(27): OrdersModel::getOne(Object(Doctrine\ORM\EntityManager), Array)
+#4 C:\xampp\htdocs\RcSystem\order_detail.php(24): include('C:\xampp\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\RcSystem\Doctrine\ORM\ORMException.php on line 160
+[30-Apr-2014 16:13:01 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '432423' for key 'id_order'' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(78): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\orders_ajax.php(38): OrdersModel::add(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next except in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[30-Apr-2014 17:09:20 Europe/Berlin] PHP Notice:  Undefined index: func in C:\xampp\htdocs\RcSystem\orders_ajax.php on line 70
+[30-Apr-2014 17:11:42 Europe/Berlin] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_user' cannot be null' in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php:138
+Stack trace:
+#0 C:\xampp\htdocs\RcSystem\Doctrine\DBAL\Statement.php(138): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\RcSystem\Doctrine\ORM\Persisters\BasicEntityPersister.php(277): Doctrine\DBAL\Statement->execute()
+#2 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(920): Doctrine\ORM\Persisters\BasicEntityPersister->executeInserts()
+#3 C:\xampp\htdocs\RcSystem\Doctrine\ORM\UnitOfWork.php(311): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#4 C:\xampp\htdocs\RcSystem\Doctrine\ORM\EntityManager.php(355): Doctrine\ORM\UnitOfWork->commit(NULL)
+#5 C:\xampp\htdocs\RcSystem\model\OrdersModel.php(148): Doctrine\ORM\EntityManager->flush()
+#6 C:\xampp\htdocs\RcSystem\orders_ajax.php(66): OrdersModel::edit(Object(Doctrine\ORM\EntityManager), Array)
+#7 {main}
+
+Next exception 'Doctr in C:\xampp\htdocs\RcSystem\Doctrine\DBAL\DBALException.php on line 47
+[30-Apr-2014 17:11:58 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\RcSystem\orders_ajax.php:63) in C:\xampp\htdocs\RcSystem\orders_ajax.php on line 67
+[30-Apr-2014 17:11:58 Europe/Berlin] PHP Notice:  Undefined index: func in C:\xampp\htdocs\RcSystem\orders_ajax.php on line 70
+[30-Apr-2014 17:12:14 Europe/Berlin] PHP Notice:  Undefined index: func in C:\xampp\htdocs\RcSystem\orders_ajax.php on line 70
+[30-Apr-2014 17:12:35 Europe/Berlin] PHP Notice:  Undefined index: func in C:\xampp\htdocs\RcSystem\orders_ajax.php on line 70

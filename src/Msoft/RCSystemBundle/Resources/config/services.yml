@@ -1,7 +1,0 @@
-parameters:
- acme.controller.hello.class: Msoft\RCSystemBundle\Controller\TbCartController
-
-services:
-   acme.hello.controller:
-        class:     "%acme.controller.hello.class%"
-#        arguments: ["@delete"]
